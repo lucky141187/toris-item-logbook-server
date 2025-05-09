@@ -6,12 +6,19 @@ const db = require("./connection")
 const response = require("./response")
 const cors = require("cors")
 const session = require('express-session');
+const allowedOrigins = ['http://127.0.0.1:5500', 'https://luckybernadi.com'];
 
 app.use(bodyParser.json())
 app.use(express.json())
 
 app.use(cors({
-  origin: 'http://127.0.0.1:5500', // <-- EXACTLY match this with the browser origin
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }));
 
