@@ -27,6 +27,10 @@ app.use(session({
   }
 }));
 
+app.get('/', (req, res) => {
+  res.send('Server is running');
+});
+
    //fungsi tombol login
 app.post('/akundblogin', (req, res) => {
   const { nameInput, passInput } = req.body;
