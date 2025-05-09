@@ -1,0 +1,130 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* background-color: rgb(142, 8, 8); */
+}
+
+.torLogo{
+    display: flex;
+    /* background-color: rgb(21, 166, 57); */
+    justify-content: center;
+    height: 20vh;
+}
+
+.logoTorishima{
+    width: 30%;
+    
+}
+
+/* USERNAME & PASSWORD */
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(124, 16, 255);
+    height: 50%;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    gap: 10px;
+    
+}
+
+#logininput{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 4px;
+}
+
+#registrasi{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 4px;
+}
+
+#tidakadaakun{
+    background-color: rgb(124, 16, 255);;
+    color: white;
+    margin-top: 4px;
+}
+
+.input{
+    width: 70%;
+    height : 20px;
+}
+
+
+.tombol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-decoration: none; */
+    list-style-type: none;
+    border-radius: 8px;
+    height: 30px;
+    width: 40%;
+    justify-content: center;
+    background-color: rgb(170, 109, 255);
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.tombol:hover{
+    cursor: pointer;
+    background-color: rgb(190, 3, 149);
+    color: chartreuse;
+    transition: .3s ease-in-out;
+}
+
+
+@media screen and (max-width: 425px){
+    
+    .torLogo{
+        height: 10vh;
+    }
+
+    .logoTorishima{
+        width: 80%;
+    }
+    
+    .container{
+        height: 90vh;
+    }
+   
+    .wrapper{
+        /* background-color: coral; */
+        height: 35%;
+        width: 80%;
+    }
+
+    .input{
+        width: 80%;
+        height : 20px;
+    }
+
+    .tombol{
+        margin-top: 5px;
+        width: 50%;
+
+    }
+    
+} 
+
+
+

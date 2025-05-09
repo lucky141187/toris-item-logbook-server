@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Review</title>
+    <link rel="stylesheet" href="mainmenu.css"/>
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <div>
+                <img src="assets/img/logo.svg" class="logoTorishima" style="margin-left: 10px;"/>
+            </div>
+
+            <div id="pemilikAkun">
+                <div>
+                    <h5>You are logged in as </h5>
+                </div>
+                <div>
+                    <h5 id="pemilik"> <span id="username"></span></h5>
+                    <button onclick="loggingOut()">Log Out</button>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="wrapper">
+
+            <div class="navbar">
+                <navbar>
+
+                    <ul class="navbar-ul">
+                        <li class="navbar-li" onclick="reftomenu()">Device Authorization</li>
+                        <li class="navbar-li" onclick="reftoreg()">Device Registration</li>
+                        <li class="navbar-li" onclick="reftoreview()">Management Review</li>
+                    </ul>
+            
+                </navbar>
+            </div>
+
+            <div class="content">
+
+                <h2>Device List Sorted by Expire Date</h2>
+
+                <div>
+                    <button type="submit" onclick="generasiexpire()" class="submit-button" style="margin-top: 10px;">Generate</button>
+                </div>
+
+                <div>
+                    <table border="1" id="expirelist" style="margin-top: 20px;">
+                        <thead class="tablehead">
+                          <tr><th>ID Number</th><th>Item Description</th><th>Calibration Expire Date</th><th>Possesion</th></tr>
+                        </thead>
+                        <tbody class="tablebody">
+                            
+                        </tbody>
+                      </table>
+                </div>
+
+                
+                
+
+                
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h3 style="margin: 10px;">Torishima Service Solution Dubai FZCO</h3>
+    </div>
+    
+    <script src="mainmenu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torishima Service Solution DXB Login Page</title>
+    <link rel="stylesheet" href="loginstyle.css" />
+</head>
+
+<body>
+
+    <div class="torLogo">
+        <img src="assets/img/logo.svg" class="logoTorishima" />
+    </div>
+
+    <div class="container">
+
+        <div class="wrapper">
+            
+            <form id="logininput">
+                <input id="nameInput" class="input" type="text" placeholder="username" />
+                <input id="passInput" type="password" placeholder="password"  class="input"/>
+                <button id="masuk" type="submit"  class="tombol">Log In</button>
+            </form>
+
+            <button id="tidakadaakun" onclick="noAccount()" >Don't have an account</button>
+            
+            <form id="registrasi">
+                <input id="daftarnama" type="text" placeholder="Choose a Name"  class="input" required/>
+                <input id="daftarpassword" type="password" placeholder="Choose a Password"  class="input" required/>
+                <button id="daftar" type="submit" onclick="register()" class="tombol">Register</button>
+            </form>
+            
+            <button id="batal" onclick="cancel()" class="tombol">Cancel</button>
+
+            <p id="message"></p>
+
+        </div>
+
+    </div>
+
+    <script src="loginscripts.js"></script>
+    
+</body>
+
+</html>

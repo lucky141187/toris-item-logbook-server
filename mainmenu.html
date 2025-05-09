@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Authorization</title>
+    <link rel="stylesheet" href="mainmenu.css"/>
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <div>
+                <img src="assets/img/logo.svg" class="logoTorishima" style="margin-left: 10px;"/>
+            </div>
+
+            <div id="pemilikAkun">
+                <div>
+                    <h5>You are logged in as </h5>
+                </div>
+                <div>
+                    <h5 id="pemilik"> <span id="username"></span></h5>
+                    <button onclick="loggingOut()">Log Out</button>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="wrapper">
+
+            <div class="navbar">
+                <navbar>
+
+                    <ul class="navbar-ul">
+                        <li class="navbar-li" onclick="reftomenu()">Device Authorization</li>
+                        <li class="navbar-li" onclick="reftoreg()">Device Registration</li>
+                        <li class="navbar-li" onclick="reftoreview()">Management Review</li>
+                    </ul>
+            
+                </navbar>
+            </div>
+
+            <div class="content">
+
+                <h2>Device Authorization</h2>
+
+                <div>
+                    <form id="formPencarian">
+                        <button type="button" onclick="search()" id="tombolPencarian">Search</button>
+                        <input type="text" id="pencarian" placeholder="Please Enter ID Number"/>
+                    </form>
+                </div>
+
+                <div>
+                    <table border="1" id="hasilPencarian">
+                        <thead class="tablehead">
+                          <tr><th>ID Number</th><th>Item Description</th><th>Calibration Expire Date</th><th>Possesion</th></tr>
+                        </thead>
+                        <tbody class="tablebody">
+                            
+                        </tbody>
+                      </table>
+                </div>
+
+                <div id="userinput">
+                    <div>
+                        <h3 class="inputLabel">Current Possesion</h3>
+                        <div class="inputArea">
+                            
+                            <button type="button" onclick="transPos()" class="submit-button">Authorization</button>
+                            
+                        </div>
+                        <!-- <div class="inputArea">
+                            <p id="transdate">Transfer Date</p>
+                        </div> -->
+                    </div>
+    
+                    <!-- <div>
+                        <h3 class="inputLabel">Condition Status</h3>
+                        <div class="inputArea">
+                            Working Properly
+                        </div>
+                    </div> -->
+                </div>
+
+                
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h3 style="margin: 10px;">Torishima Service Solution Dubai FZCO</h3>
+    </div>
+    
+    <script src="mainmenu.js"></script>
+
+</body>
+</html>

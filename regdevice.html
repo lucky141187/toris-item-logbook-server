@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Device</title>
+    <link rel="stylesheet" href="mainmenu.css"/>
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <div>
+                <img src="assets/img/logo.svg" class="logoTorishima" style="margin-left: 10px;"/>
+            </div>
+
+            <div id="pemilikAkun">
+                <div>
+                    <h5>You are logged in as </h5>
+                </div>
+                <div>
+                    <h5 id="pemilik"> <span id="username"></span></h5>
+                    <button onclick="loggingOut()">Log Out</button>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="wrapper">
+
+            <div class="navbar">
+                <navbar>
+
+                    <ul class="navbar-ul">
+                        <li class="navbar-li" onclick="reftomenu()">Device Authorization</li>
+                        <li class="navbar-li" onclick="reftoreg()">Device Registration</li>
+                        <li class="navbar-li" onclick="reftoreview()">Management Review</li>
+                    </ul>
+            
+                </navbar>
+            </div>
+
+            <div class="content">
+                
+                <h2>Device Registration</h2>
+                <form id="formregristrasi">
+                    <div class="form-group">
+                        <label for="idNumber">ID Number</label>
+                        <input type="text" id="idNumber" name="idNumber" placeholder="Please input ID number here" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="itemDescription">Item Description</label>
+                        <input type="text" id="itemDescription" name="itemDescription" placeholder="Device Type - Specification - Manufacturer" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="calibrationExpire">Calibration Expire</label>
+                        <input type="date" id="calibrationExpire" name="calibrationExpire" />
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+
+                
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h3 style="margin: 10px;">Torishima Service Solution Dubai FZCO</h3>
+    </div>
+    
+    <script src="mainmenu.js"></script>
+
+</body>
+</html>
